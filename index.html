@@ -1,313 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <title>Rudra Narayan Rath - Certified Flutter Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudra Narayan Rath | Flutter Developer</title>
+    <meta name="description"
+        content="Portfolio of Rudra Narayan Rath, Flutter developer building production mobile apps with Flutter, Firebase, Spring Boot, PostgreSQL, AWS, and BLE integration." />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@500,700,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Loading Screen -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-circle"></div>
-            <span>Certified Flutter Developer</span>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-mobile-alt"></i>
-                <span>RNR</span>
-            </div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul id="nav-links" class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
-                <li><a href="#coding-profile" class="nav-link">Coding Profile</a></li>
-                <li><a href="files/Rudra Narayan Rath - Resume.pdf" class="resume-btn" download>
-                    <i class="fas fa-download"></i> Resume
-                </a></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="brand" aria-label="Rudra Narayan Rath home">
+                <span class="brand-mark">R</span>
+                <span class="brand-text">Rudra Narayan Rath</span>
+            </a>
 
-    <!-- Hero/About Section - UPDATED -->
-    <section id="about" class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <!-- Profile Photo & Badge -->
-                <div class="profile-header">
-                    <div class="profile-image-container">
-                        <img src="images/my-image.jpg" alt="Rudra Narayan Rath" class="profile-image">
-                        <div class="profile-badge">
-                            <i class="fab fa-flutter"></i>
-                            <span>Certified Flutter Developer</span>
-                        </div>
-                        <div class="profile-overlay">
-                            <i class="fas fa-user"></i>
-                        </div>
+            <nav class="nav" aria-label="Main navigation">
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a class="resume-link" href="files/Rudra_Narayan_Rath_Flutter_Resume.pdf" download>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero section" id="top">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Flutter Developer • Bhubaneswar, Odisha</p>
+                    <h1> Sometimes I think I should sleep before 10:30 PM... but I never do. Scroll down to find out
+                        why. 👇</h1>
+                    <p class="hero-text">
+                        My favorite message? "✅ Your app has been successfully published."
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
+
+                    <ul class="hero-metrics" role="list">
+                        <li>
+                            <strong>003+</strong>
+                            <span>Live Play Store app</span>
+                        </li>
+                        <li>
+                            <strong>100+</strong>
+                            <span>Students served in MarkMe</span>
+                        </li>
+                        <li>
+                            <strong>200+</strong>
+                            <span>LeetCode problems solved</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Intro Paragraph -->
-                <div class="intro-card">
-                    <h1 class="hero-title">Rudra Narayan Rath</h1>
-                    <div class="playstore-badge">
-                        <i class="fab fa-google-play"></i>
-                        <span>Published 2 Flutter Apps on Play Store</span>
-                        <small>Planning App Store release soon</small>
+                <aside class="hero-card" aria-label="Profile overview">
+                    <div class="hero-card-top">
+                        <img src="images/my-image.jpeg" alt="Rudra Narayan Rath" width="520" height="620"
+                            loading="eager" />
                     </div>
-                    <p class="hero-intro">
-                        Full Stack Mobile Developer with comprehensive knowledge of <strong>System Design</strong>, 
-                        <strong>Software Architecture</strong>, and <strong>Databases</strong>. Expert in 
-                        <strong>Flutter/Dart</strong> ecosystem with production apps live on Play Store. 
-                        Proficient with <strong>Firebase/Firestore</strong> for scalable backend solutions, 
-                        state management (Riverpod/Bloc), and modern architectural patterns (Clean Architecture/MVVM).
+
+                    <div class="hero-card-bottom">
+                        <span class="chip chip-accent">Flutter</span>
+                        <span class="chip">Spring Boot</span>
+                        <span class="chip">Firebase</span>
+                        <span class="chip">AWS</span>
+                        <span class="chip">REST APIs</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">Clean Architecture</span>
+                        <span class="chip">Agile Development</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-soft" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">About</p>
+                    <h2>Developer profile</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="info-card">
+                        <h3>Professional summary</h3>
+                        <p>
+                            Flutter developer with hands-on industry experience building scalable, production-ready
+                            cross-platform mobile applications. Strong with Flutter, Dart, BLoC, REST APIs, Firebase,
+                            BLE communication, and backend systems using Spring Boot, PostgreSQL, and AWS.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Core strengths</h3>
+                        <ul class="detail-list">
+                            <li>Cross-platform app development with Flutter and Dart</li>
+                            <li>Clean Architecture, MVVM, Repository Pattern, and SOLID principles</li>
+                            <li>REST API integration, Dio, JSON parsing, and offline storage</li>
+                            <li>Firebase, PostgreSQL, Spring Boot, AWS EC2, RDS, and S3</li>
+                            <li>Google Play Store deployment and iterative product updates</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Current role</h2>
+                </div>
+
+                <article class="experience-card">
+                    <div class="experience-top">
+                        <div>
+                            <h3>Flutter Developer Intern</h3>
+                            <p class="experience-meta">Quick Leap Innovations Private Limited • Bengaluru • March 2026 –
+                                Present</p>
+                        </div>
+                        <span class="chip chip-accent">Industry Experience</span>
+                    </div>
+
+                    <ul class="detail-list">
+                        <li>Built and maintained production-ready cross-platform mobile apps using Flutter and Dart.
+                        </li>
+                        <li>Designed responsive UI screens and reusable widgets while improving performance through bug
+                            fixing and optimization.</li>
+                        <li>Integrated REST APIs, analytics, and Bluetooth/IoT communication for real-time app-hardware
+                            interaction.</li>
+                        <li>Developed core product modules including Ride History, Speed Lock System, and Parental
+                            Control.</li>
+                        <li>Worked in Agile workflows with Git, pull requests, code reviews, and scalable delivery
+                            practices.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-soft" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Featured work</h2>
+                    <p>Projects that best reflect production delivery, architecture, and full-stack mobile ownership.
                     </p>
                 </div>
 
-                <!-- Certificates Grid - CORRECT ORDER -->
-                <div class="certificates-grid">
-                    <div class="certificate-card featured">
-                        <div class="certificate-icon">
-                            <img src="images/flutter-certificate.jpg" alt="Android Developer">
-                            <i class="fab fa-flutter"></i>
+                <div class="project-list">
+                    <article class="project-card featured-project">
+                        <div class="project-media">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-headphones"></i>
+                            </div>
                         </div>
-                        <h3>Certified Flutter Developer</h3>
-                        <p>Udemy Flutter Certification</p>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-icon">
-                            <img src="images/Android_Dev_Image.jpg" alt="Android Developer">
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="chip chip-accent">Live on Play Store</span>
+                                <span class="chip">Flutter + Spring Boot</span>
+                            </div>
+
+                            <h3>Mantra Audio</h3>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.oxiionglobal.mantraaudio"
+                                    class="text-link" target="_blank" rel="noopener noreferrer">App Link</a>
+                            </div>
+                            <p class="project-stack">
+                                Flutter • Dart • Spring Boot • PostgreSQL • AWS EC2/RDS/S3 • BLoC • Dio • Clean
+                                Architecture • REST APIs
+                            </p>
+                            <p>
+                                End-to-end spiritual audio streaming platform where I independently built both the
+                                Flutter frontend
+                                and Spring Boot backend. Includes scalable REST APIs, AWS-hosted infrastructure, secure
+                                media storage,
+                                playlist management, playback controls, progress tracking, localization, dependency
+                                injection, and
+                                modular production-grade code.
+                            </p>
+
+
                         </div>
-                        <h3>Certified Android Developer</h3>
-                        <p>Android Development Certification</p>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-icon">
-                            <img src="images/abou_image_3.jpg" alt="BPUT Runner-Up">
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
                         </div>
-                        <h3>BPUT App Dev Runner-Up</h3>
-                        <p>Biju Patnaik University Hackathon</p>
-                    </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="chip chip-accent">ERP System</span>
+                                <span class="chip">Firebase + BLoC</span>
+                            </div>
+
+                            <h3>MarkMe</h3>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.oxiionglobal.markme.student"
+                                    class="text-link" target="_blank" rel="noopener noreferrer">App Link</a>
+                            </div>
+                            <p class="project-stack">
+                                Flutter • Firebase • BLoC • Clean Architecture • GetIt • Go_Router
+                            </p>
+                            <p>
+                                Scalable college ERP and smart attendance platform with separate Student, Teacher, and
+                                Admin applications.
+                                Deployed in production at USBM, Bhubaneswar, serving 600+ students with real-time
+                                attendance sync and
+                                multiple Play Store updates for stability, performance, and feature improvements.
+                            </p>
+
+
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Signature Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-media">
-                        <iframe src="https://www.youtube.com/embed/J2CU5UvXckI" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-content">
-                        <h3>User Management App</h3>
-                        <p>Complete user management solution with authentication, CRUD operations, and real-time updates using Firestore.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/oxiion-code/Task_04_25/tree/main/task_ng" target="_blank" class="btn-primary">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
+        <section class="section" id="stack">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Tech Stack</p>
+                    <h2>Tools and technologies</h2>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-media">
-                        <div class="project-placeholder flutter">
-                            <i class="fab fa-flutter"></i>
+                <div class="stack-columns">
+                    <article class="stack-card">
+                        <h3>Languages & Frameworks</h3>
+                        <div class="stack-wrap">
+                            <span class="stack-item">Flutter</span>
+                            <span class="stack-item">Dart</span>
+                            <span class="stack-item">Java</span>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>MarkBook: Teacher App</h3>
-                        <p>Educational platform built with Flutter & Firestore for teachers with student management, attendance tracking, and class sessions.</p>
-                        <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.oxiionglobal.markme.teacher" class="btn-primary" onclick="alert('Live on Play Store!')">
-                                <i class="fab fa-google-play"></i> Play Store
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-media">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
+                    <article class="stack-card">
+                        <h3>Architecture & State</h3>
+                        <div class="stack-wrap">
+                            <span class="stack-item">Clean Architecture</span>
+                            <span class="stack-item">MVVM</span>
+                            <span class="stack-item">Repository Pattern</span>
+                            <span class="stack-item">BLoC</span>
+                            <span class="stack-item">SOLID</span>
+                            <span class="stack-item">OOP</span>
+                            <span class="stack-item">GetIt</span>
+                            <span class="stack-item">Go_Router</span>
                         </div>
-                    </div>
-                    <div class="project-content">
-                      <h3>Student App: MarkMe</h3>
-<p>A comprehensive college management mobile application built with Flutter, featuring attendance tracking, academic performance monitoring, real-time notifications, and seamless student–faculty interaction.</p>
-                        <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.oxiionglobal.markme.student" class="btn-primary" onclick="alert('Live on Play Store!')">
-                                <i class="fab fa-google-play"></i> Play Store
-                            </a>
+                    </article>
+
+                    <article class="stack-card">
+                        <h3>Networking & Storage</h3>
+                        <div class="stack-wrap">
+                            <span class="stack-item">REST APIs</span>
+                            <span class="stack-item">Dio</span>
+                            <span class="stack-item">HTTP</span>
+                            <span class="stack-item">JSON</span>
+                            <span class="stack-item">Postman</span>
+                            <span class="stack-item">Firebase</span>
+                            <span class="stack-item">Hive</span>
+                            <span class="stack-item">SharedPreferences</span>
+                            <span class="stack-item">PostgreSQL</span>
+                            <span class="stack-item">Offline Storage</span>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="stack-card">
+                        <h3>Backend & Connectivity</h3>
+                        <div class="stack-wrap">
+                            <span class="stack-item">Spring Boot</span>
+                            <span class="stack-item">AWS EC2</span>
+                            <span class="stack-item">AWS RDS</span>
+                            <span class="stack-item">AWS S3</span>
+                            <span class="stack-item">BLE</span>
+                            <span class="stack-item">Bluetooth / IoT</span>
+                            <span class="stack-item">Payment Gateway Integration</span>
+                        </div>
+                    </article>
+
+                    <article class="stack-card">
+                        <h3>Tools & Deployment</h3>
+                        <div class="stack-wrap">
+                            <span class="stack-item">Git</span>
+                            <span class="stack-item">GitHub</span>
+                            <span class="stack-item">Android Studio</span>
+                            <span class="stack-item">Google Play Publishing</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="tech-stack-section">
-        <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
-            <div class="tech-stack-grid">
-                <div class="tech-item featured">
-                    <img src="images/flutter_icon.png" alt="Flutter">
-                    <span>Flutter</span>
+        <section class="section section-soft" id="awards">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Awards & Certificates</p>
+                    <h2>Recognition and learning</h2>
                 </div>
-                <div class="tech-item">
-                    <img src="images/dart_icon.png" alt="Dart">
-                    <span>Dart</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/kotlin-logo-removebg-preview.png" alt="Kotlin">
-                    <span>Kotlin</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/Java-logo-removebg-preview.png" alt="Java">
-                    <span>Java</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/javascript-logo.png" alt="JavaScript">
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/jetpack-compose-logo.png" alt="Jetpack Compose">
-                    <span>Jetpack Compose</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/HTML5_logo.png" alt="HTML5">
-                    <span>HTML5</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/css.png" alt="CSS">
-                    <span>CSS</span>
-                </div>
-                <div class="tech-item">
-                    <img src="images/github-logo.png" alt="GitHub">
-                    <span>GitHub</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Coding Profile Section -->
-    <section id="coding-profile" class="coding-profile-section">
-        <div class="container">
-            <h2 class="section-title">Coding Profile</h2>
-            <div class="profile-grid">
-                <div class="profile-card">
-                    <h3><i class="fab fa-leetcode"></i> LeetCode Stats</h3>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="250">0</span>
-                            <span class="stat-label">Total Solved</span>
+                <div class="proof-grid">
+                    <article class="proof-card">
+                        <img src="images/award.jpg" alt="BPUT state-level mobile app development competition award"
+                            width="600" height="420" loading="lazy" />
+                        <div>
+                            <h3>BPUT State-Level Mobile App Development Winner</h3>
+                            <p>Odisha State-Level Mobile Apple Development competition</p>
+
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="120">0</span>
-                            <span class="stat-label">Medium</span>
+                    </article>
+
+                    <article class="proof-card">
+                        <img src="images/flutter-certificate.jpg" alt="Flutter mobile app development certificate"
+                            width="600" height="420" loading="lazy" />
+                        <div>
+                            <h3>Flutter Mobile App Development Certification</h3>
+
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="15">0</span>
-                            <span class="stat-label">Hard</span>
+                    </article>
+
+                    <article class="proof-card">
+                        <img src="images/Android_Dev_Image.jpg" alt="Android app development certificate" width="600"
+                            height="420" loading="lazy" />
+                        <div>
+                            <h3>Android App Development Certification</h3>
+
                         </div>
-                    </div>
-                    <p class="username">@R2024</p>
+                    </article>
+
+                    <article class="proof-card">
+                        <img src="images/Prompt_Eng.png" alt="Java programming certificate" width="600" height="420"
+                            loading="lazy" />
+                        <div>
+                            <h3>Prompt Engineering Certification</h3>
+
+                        </div>
+                    </article>
+
+                    <article class="proof-card stats-card">
+                        <div>
+                            <h3>LeetCode milestone</h3>
+                            <ul class="stats-list" role="list">
+                                <li><strong>200+</strong><span>Problems solved</span></li>
+                                <li><strong>100</strong><span>Days challenge completed</span></li>
+                                <li><strong>DSA</strong><span>Focused practice</span></li>
+                            </ul>
+    
+                            <a href="https://leetcode.com/u/R2024/" class="text-link" target="_blank" rel="noopener noreferrer">LeetCode Link</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Education</p>
+                    <h2>Academic background</h2>
                 </div>
 
-                <div class="achievements-grid">
-                    <div class="achievement-badge">
-                        <img src="images/badge-1.png" alt="Top 4.8%">
-                        <span>Top 4.8%</span>
-                    </div>
-                    <div class="achievement-badge">
-                        <img src="images/badge-50.png" alt="Top 6.9%">
-                        <span>Top 6.9%</span>
-                    </div>
-                    <div class="achievement-badge">
-                        <img src="images/java4star badge.png" alt="HackerRank">
-                        <span>HackerRank</span>
-                    </div>
-                </div>
-            </div>
+                <div class="about-grid">
+                    <article class="info-card">
+                        <h3>B.Tech, Computer Science and Technology</h3>
+                        <p>GITA Autonomous College, Bhubaneswar</p>
+                        <p class="muted">CGPA: 8.8 • Semester 6 GPA: 8.92</p>
+                    </article>
 
-            <div class="certificates-grid">
-                <div class="certificate-card">
-                    <img src="images/award.jpg" alt="BPUT App Dev">
-                    <span>BPUT App Development</span>
-                </div>
-                <div class="certificate-card">
-                    <img src="images/4star_JAva.png" alt="Java Certification">
-                    <span>Java 4-Star</span>
-                </div>
-                <div class="certificate-card">
-                    <img src="images/Prompt_Eng.png" alt="Prompt Engineering">
-                    <span>ChatGPT Prompt Engineering</span>
-                </div>
-                <div class="certificate-card">
-                    <img src="images/MERIT_IIT_BBSR_CERTIFICATE.jpg" alt="IIT BBSR">
-                    <span>IIT BBSR Entrepreneurship Merit</span>
+                    <article class="info-card">
+                        <h3>12th Grade</h3>
+                        <p>PCM with Computer Science • Sainik School, Bhubaneswar</p>
+                        <p class="muted">Score: 92/100</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3><i class="fab fa-flutter"></i> Rudra Narayan Rath</h3>
-                    <p>Flutter Developer | Bhubaneswar, Odisha | Live Apps on Play Store</p>
-                    <div class="social-links">
-                        <a href="https://github.com/whitedevil-ragnor/Android-Apps" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/rudranarayanrath" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+        <footer class="section footer" id="contact">
+            <div class="container footer-grid">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let’s build useful mobile products.</h2>
+                    <p class="footer-text">
+                        Available for Flutter development, mobile product engineering, and app-focused backend
+                        integration work.
+                    </p>
+
+                    <div class="contact-points">
+                        <p><i class="fa-solid fa-envelope"></i> rudra.narayan.rath.01@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91-9777335919</p>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="https://github.com/rudranarayanrath01" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/rudra-narayan-rath-a77a02264" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </div>
-                <div class="feedback-form">
-                    <h3>Send Feedback</h3>
-                    <form id="feedback" action="https://formsubmit.co/rudranarayanrath6204@gmail.com" method="POST">
-                        <textarea name="feedback" placeholder="Share your thoughts about my work..." required></textarea>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/rudranarayanrath6204@gmail.com" method="POST">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="feedback" placeholder="Share your thoughts about my work..."
+                        required></textarea>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="table" />
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rudra Narayan Rath. <strong>Certified Flutter Developer</strong> | Built with Flutter expertise & modern web technologies.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
